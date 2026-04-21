@@ -12,8 +12,7 @@ Generate a spec that is detailed enough for implementation to proceed without ma
 
 ## Primary behavior
 
-User-provided focus or constraints (honor these):
-$ARGUMENTS
+Honor User-provided request or constraints.
 
 1. Understand the intended outcome.
 2. Extract goals, constraints, assumptions, and open questions.
