@@ -1,5 +1,6 @@
 ---
 description: Creates or updates a AGENTS.md based on the project.
+model: openai/gpt-5.4
 ---
 
 Create or update `AGENTS.md` for this repository.
