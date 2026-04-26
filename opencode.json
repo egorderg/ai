@@ -10,9 +10,8 @@
       "disable": true
     },
     "build": {
-      "disable": false
-    },
-    "implement": {}
+      "disable": true
+    }
   },
   "permission": {
     "lsp": "allow",

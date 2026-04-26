@@ -3,10 +3,9 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
-PROJECT_DIR="$(pwd)"
-OPENCODE_DIR="$PROJECT_DIR/.opencode"
+OPENCODE_DIR="$HOME/.config/opencode"
 
-ensure_directory_copy() {
+ensure_symlink() {
   local source_path="$1"
   local target_path="$2"
 
@@ -15,17 +14,14 @@ ensure_directory_copy() {
     return 0
   fi
 
-  cp -R "$source_path" "$target_path"
+  ln -s "$source_path" "$target_path"
 }
 
 mkdir -p "$OPENCODE_DIR"
-mkdir -p "$OPENCODE_DIR/skills"
 
-cp "$SCRIPT_DIR/opencode.json" "$PROJECT_DIR/opencode.json"
+ensure_symlink "$SCRIPT_DIR/agents" "$OPENCODE_DIR/agents"
+ensure_symlink "$SCRIPT_DIR/commands" "$OPENCODE_DIR/commands"
+ensure_symlink "$SCRIPT_DIR/skills" "$OPENCODE_DIR/skills"
+ensure_symlink "$SCRIPT_DIR/opencode.json" "$OPENCODE_DIR/opencode.json"
 
-ensure_directory_copy "$SCRIPT_DIR/agents" "$OPENCODE_DIR/agents"
-ensure_directory_copy "$SCRIPT_DIR/commands" "$OPENCODE_DIR/commands"
-
-touch "$OPENCODE_DIR/skills/.gitkeep"
-
-printf 'AI workflow installed in %s\n' "$PROJECT_DIR"
+printf 'OpenCode config installed in %s\n' "$OPENCODE_DIR"
