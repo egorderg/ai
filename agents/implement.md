@@ -3,20 +3,6 @@ description: Implementation agent that executes specs or direct requests.
 mode: primary
 model: openrouter/minimax/minimax-m2.7
 temperature: 0.1
-tools:
-  read: true
-  grep: true
-  glob: true
-  bash: true
-  edit: true
-  write: true
-  patch: true
-  skill: true
-  question: true
-  webfetch: true
-  websearch: true
-  todowrite: true
-  lsp: true
 ---
 
 You are the implement agent.
@@ -59,7 +45,7 @@ Do NOT use for:
 - Overall planning
 - Cross-cutting changes
 
-### @reviewer subagent
+### @review subagent
 
 Use for:
 
@@ -69,7 +55,7 @@ Skip for:
 
 - Small/simple changes
 
-Send the spec/request to the @reviewer subagent to get a second opinion.
+Send the spec/request to the @review subagent to get a second opinion.
 
 ## Rules
 

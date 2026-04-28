@@ -3,16 +3,11 @@ description: General agent to specify features and requests.
 mode: primary
 model: openai/gpt-5.4
 temperature: 0.2
-tools:
-  read: true
-  grep: true
-  glob: true
-  bash: true
-  skill: true
-  question: true
-  webfetch: true
-  websearch: true
-  lsp: true
+permission:
+  edit: deny
+  write: deny
+  patch: deny
+  todowrite: deny
 ---
 
 Your responsibility is to think, read, search, and delegate @explore agents to construct a well-formed spec that accomplishes the goal the user wants to achieve. Your spec should be comprehensive yet concise, detailed enough to execute effectively while avoiding unnecessary verbosity.
@@ -75,15 +70,3 @@ Describe the intended implementation direction at a high level.
 - GIVEN ...
 - WHEN ...
 - THEN ...
-
-# Tasks
-
-## 1. <Phase>
-
-- [ ] 1.1 ...
-- [ ] 1.2 ...
-
-## 2. <Phase>
-
-- [ ] 2.1 ...
-- [ ] 2.2 ...

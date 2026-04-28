@@ -3,15 +3,11 @@ description: Focused implementation worker for bounded coding tasks.
 model: openrouter/minimax/minimax-m2.7
 temperature: 0.1
 mode: subagent
-tools:
-  read: true
-  grep: true
-  glob: true
-  bash: true
-  edit: true
-  write: true
-  patch: true
-  lsp: true
+permission:
+  todowrite: deny
+  question: deny
+  webfetch: deny
+  websearch: deny
 ---
 
 You are a focused builder subagent.
