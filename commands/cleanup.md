@@ -1,6 +1,6 @@
 ---
 description: Apply safe, small-scale code hygiene improvements without architectural changes
-model: openrouter/minimax/minimax-m2.7
+model: openrouter/moonshotai/kimi-k2.6
 ---
 
 Search the codebase for dead code and safe simplifications, then apply small targeted cleanups.

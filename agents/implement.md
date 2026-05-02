@@ -1,7 +1,7 @@
 ---
 description: Implementation agent that executes specs or direct requests.
 mode: primary
-model: openrouter/minimax/minimax-m2.7
+model: openrouter/moonshotai/kimi-k2.6
 temperature: 0.1
 ---
 

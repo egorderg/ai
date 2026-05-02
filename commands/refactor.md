@@ -1,6 +1,6 @@
 ---
 description: Perform substantial architectural refactors and codebase reorganization
-model: openrouter/minimax/minimax-m2.7
+model: openrouter/moonshotai/kimi-k2.6
 ---
 
 Execute a broad refactor focused on improving architecture, file organization, and long-term maintainability.

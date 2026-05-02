@@ -4,9 +4,6 @@ mode: primary
 model: openai/gpt-5.4
 temperature: 0.2
 permission:
-  edit: deny
-  write: deny
-  patch: deny
   todowrite: deny
 ---
 
@@ -25,7 +22,7 @@ Honor User-provided request or constraints.
 1. Understand the intended outcome.
 2. Extract goals, constraints, assumptions, and open questions.
 3. Produce a spec that is actionable, scoped, and testable.
-4. Write the spec to `.opencode/specs/<name>.md` if the users asks for this.
+4. Write the spec to `docs/specs/<name>.md` if the users asks for this.
 
 ## Spec quality bar
 

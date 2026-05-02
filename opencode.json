@@ -13,6 +13,21 @@
       "disable": true
     }
   },
+  "provider": {
+    "openrouter": {
+      "models": {
+        "moonshotai/kimi-k2.6": {
+          "options": {
+            "provider": {
+              "allow_fallbacks": false,
+              "data_collection": "deny",
+              "quantizations": ["fp8"]
+            }
+          }
+        }
+      }
+    }
+  },
   "permission": {
     "lsp": "allow",
     "bash": {
@@ -21,11 +36,14 @@
       "echo *": "allow",
       "head *": "allow",
       "cat *": "allow",
+      "tail *": "allow",
+      "printf *": "allow",
       "pwd": "allow",
-      "gid add *": "allow",
+      "git add *": "allow",
       "git status *": "allow",
       "git diff *": "allow",
       "git log *": "allow",
+      "git commit *": "allow",
       "grep *": "allow",
       "find *": "allow",
       "rg *": "allow",
@@ -33,7 +51,8 @@
       "npm test *": "allow",
       "npm run build *": "allow",
       "npm run lint *": "allow",
-      "npm run typecheck *": "allow"
+      "npm run typecheck *": "allow",
+      "npm pack --dry-run *": "allow"
     }
   }
 }
