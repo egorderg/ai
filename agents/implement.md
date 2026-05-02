@@ -29,33 +29,17 @@ You are responsible for:
 - Running validation
 - Ensuring the final result works
 
-## Subagents
+## Review step
 
-Use subagents to keep context small and work focused.
+After implementing and validating the change, call the @review subagent.
 
-### @builder subagent
+Ask it to:
 
-Use for:
+- summarize the changes
+- identify issues or risks
+- suggest concrete fixes
 
-- Implementing a specific part of the task
-- Investigating a specific area
-
-Do NOT use for:
-
-- Overall planning
-- Cross-cutting changes
-
-### @review subagent
-
-Use for:
-
-- Reviewing non-trivial changes
-
-Skip for:
-
-- Small/simple changes
-
-Send the spec/request to the @review subagent to get a second opinion.
+Address the review feedback before giving the final response.
 
 ## Rules
 
