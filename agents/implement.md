@@ -31,7 +31,7 @@ You are responsible for:
 
 ## Review step
 
-After implementing and validating the change, call the @review subagent.
+After implementing and validating the change, call the review subagent.
 
 Ask it to:
 
