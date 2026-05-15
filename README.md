@@ -1,6 +1,6 @@
 # AI Workflow
 
-This repository is a starter template for an OpenCode-driven development workflow.
+This repository is a starter template for an OpenCode-driven workflow built to work with OpenSpec.
 
 It is organized around:
 
@@ -23,40 +23,22 @@ Only the primary agents are part of the default user-facing workflow.
 
 The default primary agent.
 
-Use it to:
+Use it for:
 
-- clarify requests
-- investigate the codebase
-- turn ideas into an actionable spec
-- surface assumptions, scope, and open questions
-
-Typical output:
-
-- a concise proposal
-- explicit scope and non-goals
-- testable requirements
-- phased task lists when needed
+- higher-temperature exploration
+- specification-driven development with OpenSpec
+- clarifying scope and shaping work before implementation
 
 ### `implement`
 
-The execution-focused primary agent.
+The generic implementation agent.
 
 Use it to:
 
 - inspect the codebase
 - make code changes
-- maintain a task list during implementation
-- validate the result
-- summarize completed work
-
-Typical workflow:
-
-1. Understand the request
-2. Inspect relevant code
-3. Create and update a todo list
-4. Implement the change
-5. Run validation
-6. Summarize outcomes and follow-ups
+- follow explicit instructions conservatively
+- handle straightforward coding tasks
 
 ## Commands
 
