@@ -90,6 +90,17 @@ Use it for:
 - simplifying low-risk logic
 - making small local hygiene improvements
 
+### `/docs`
+
+Creates or improves documentation for exported or public members.
+
+Use it when you want to:
+
+- document a package or module API
+- add missing docs to public functions, classes, or components
+- improve generated-facing or user-facing code documentation
+- tighten docs for the code surface other files depend on
+
 ## Skills
 
 The `skills/` directory is reserved for custom workflow extensions.
